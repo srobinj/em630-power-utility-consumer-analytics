@@ -11,3 +11,4 @@ data/new/*
 !data/new/.gitkeep
 models/*
 !models/.gitkeep
+PROJECT_STATUS.md

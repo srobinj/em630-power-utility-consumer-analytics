@@ -1,0 +1,957 @@
+section,column,finding,count,denominator,percent,value,action,reason
+shape,,rows_before,73578.0,,,,retain,
+shape,,columns_before,92.0,,,,retain,
+schema,,missing_required_columns,0.0,,,[],retain,
+inspection,MONTH,input_dtype,,,,str,retain,
+missing,MONTH,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,MONTH,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,YEAR,input_dtype,,,,str,retain,
+missing,YEAR,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,YEAR,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CIRCLE_CODE,input_dtype,,,,str,retain,
+missing,CIRCLE_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CIRCLE_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CIRCLE_NAME,input_dtype,,,,str,retain,
+missing,CIRCLE_NAME,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CIRCLE_NAME,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,DIVISION_CODE,input_dtype,,,,str,retain,
+missing,DIVISION_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,DIVISION_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,DIVISION_NAME,input_dtype,,,,str,retain,
+missing,DIVISION_NAME,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,DIVISION_NAME,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SUBDIV_CODE,input_dtype,,,,str,retain,
+missing,SUBDIV_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SUBDIV_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SUBDIV_NAME,input_dtype,,,,str,retain,
+missing,SUBDIV_NAME,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SUBDIV_NAME,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,LOCATION_CODE,input_dtype,,,,str,retain,
+missing,LOCATION_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,LOCATION_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CONSUMER_NO,input_dtype,,,,str,retain,
+missing,CONSUMER_NO,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CONSUMER_NO,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CONSUMER_NAME,input_dtype,,,,str,retain,
+missing,CONSUMER_NAME,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CONSUMER_NAME,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,ADDRESS1,input_dtype,,,,str,retain,
+missing,ADDRESS1,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,ADDRESS1,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,ADDRESS2,input_dtype,,,,str,retain,
+missing,ADDRESS2,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,ADDRESS2,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CENCUS_CODE,input_dtype,,,,str,retain,
+missing,CENCUS_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CENCUS_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,TRANS_LOCATION,input_dtype,,,,str,retain,
+missing,TRANS_LOCATION,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,TRANS_LOCATION,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SD_AMOUNT,input_dtype,,,,str,retain,
+missing,SD_AMOUNT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SD_AMOUNT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CONNECTION_DATE,input_dtype,,,,str,retain,
+missing,CONNECTION_DATE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CONNECTION_DATE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,POLE_CODE,input_dtype,,,,str,retain,
+missing,POLE_CODE,standard_pandas_missing,59156.0,73578.0,80.39903231944331,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,POLE_CODE,literal_blank_or_whitespace,59156.0,73578.0,80.39903231944331,,retain,
+disguised_missing,POLE_CODE,[blank/whitespace],59156.0,73578.0,80.39903231944331,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,PDC_DATE,input_dtype,,,,str,retain,
+missing,PDC_DATE,standard_pandas_missing,73525.0,73578.0,99.92796759901057,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,PDC_DATE,literal_blank_or_whitespace,73525.0,73578.0,99.92796759901057,,retain,
+disguised_missing,PDC_DATE,[blank/whitespace],73525.0,73578.0,99.92796759901057,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,IND_TYPE,input_dtype,,,,str,retain,
+missing,IND_TYPE,standard_pandas_missing,22434.0,73578.0,30.49009214710919,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,IND_TYPE,literal_blank_or_whitespace,22434.0,73578.0,30.49009214710919,,retain,
+disguised_missing,IND_TYPE,[blank/whitespace],22434.0,73578.0,30.49009214710919,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+disguised_missing,IND_TYPE,[other candidate; local details],2123.0,73578.0,2.8853733452934303,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,SEASONAL_IND,input_dtype,,,,str,retain,
+missing,SEASONAL_IND,standard_pandas_missing,72969.0,73578.0,99.17230693957433,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SEASONAL_IND,literal_blank_or_whitespace,72969.0,73578.0,99.17230693957433,,retain,
+disguised_missing,SEASONAL_IND,[blank/whitespace],72969.0,73578.0,99.17230693957433,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,SD_AMOUNT_RECEIPT_DATE,input_dtype,,,,str,retain,
+missing,SD_AMOUNT_RECEIPT_DATE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SD_AMOUNT_RECEIPT_DATE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SD_AMOUNT_RECEIPT_NO,input_dtype,,,,str,retain,
+missing,SD_AMOUNT_RECEIPT_NO,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SD_AMOUNT_RECEIPT_NO,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CONTRACT_LOAD,input_dtype,,,,str,retain,
+missing,CONTRACT_LOAD,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CONTRACT_LOAD,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,TARRIF,input_dtype,,,,str,retain,
+missing,TARRIF,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,TARRIF,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CYCLE_NO,input_dtype,,,,str,retain,
+missing,CYCLE_NO,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CYCLE_NO,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,METER_READER_NO,input_dtype,,,,str,retain,
+missing,METER_READER_NO,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,METER_READER_NO,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,BOOK_NO,input_dtype,,,,str,retain,
+missing,BOOK_NO,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,BOOK_NO,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,ROUTE_CODE,input_dtype,,,,str,retain,
+missing,ROUTE_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,ROUTE_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,METER_NO,input_dtype,,,,str,retain,
+missing,METER_NO,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,METER_NO,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,METER_STATUS,input_dtype,,,,str,retain,
+missing,METER_STATUS,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,METER_STATUS,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,EDUTY_CODE,input_dtype,,,,str,retain,
+missing,EDUTY_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,EDUTY_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,EDUTY_AMOUNT,input_dtype,,,,str,retain,
+missing,EDUTY_AMOUNT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,EDUTY_AMOUNT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CONTRACT_DEMAND,input_dtype,,,,str,retain,
+missing,CONTRACT_DEMAND,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CONTRACT_DEMAND,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,FEEDER_NO,input_dtype,,,,str,retain,
+missing,FEEDER_NO,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,FEEDER_NO,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,PHASE,input_dtype,,,,str,retain,
+missing,PHASE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,PHASE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,METER_RENT_TYPE,input_dtype,,,,str,retain,
+missing,METER_RENT_TYPE,standard_pandas_missing,7252.0,73578.0,9.85620701840224,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,METER_RENT_TYPE,literal_blank_or_whitespace,7252.0,73578.0,9.85620701840224,,retain,
+disguised_missing,METER_RENT_TYPE,[blank/whitespace],7252.0,73578.0,9.85620701840224,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,THEFT_ARREARS,input_dtype,,,,str,retain,
+missing,THEFT_ARREARS,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,THEFT_ARREARS,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,LITIGATION_ARREARS,input_dtype,,,,str,retain,
+missing,LITIGATION_ARREARS,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,LITIGATION_ARREARS,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,FIXED_CHG,input_dtype,,,,str,retain,
+missing,FIXED_CHG,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,FIXED_CHG,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,FUEL_CHG,input_dtype,,,,str,retain,
+missing,FUEL_CHG,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,FUEL_CHG,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,FUSE_CHG,input_dtype,,,,str,retain,
+missing,FUSE_CHG,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,FUSE_CHG,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CREDIT_ADJUSTMENT,input_dtype,,,,str,retain,
+missing,CREDIT_ADJUSTMENT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CREDIT_ADJUSTMENT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,DEBIT_ADJUSTMENT,input_dtype,,,,str,retain,
+missing,DEBIT_ADJUSTMENT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,DEBIT_ADJUSTMENT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CLOSING_ARREARS,input_dtype,,,,str,retain,
+missing,CLOSING_ARREARS,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CLOSING_ARREARS,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,CONSUMPTION_UNIT,input_dtype,,,,str,retain,
+missing,CONSUMPTION_UNIT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,CONSUMPTION_UNIT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,ASSESSMENT_UNIT,input_dtype,,,,str,retain,
+missing,ASSESSMENT_UNIT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,ASSESSMENT_UNIT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,DPC_AMOUNT,input_dtype,,,,str,retain,
+missing,DPC_AMOUNT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,DPC_AMOUNT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,RELIEF_AMOUNT,input_dtype,,,,str,retain,
+missing,RELIEF_AMOUNT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,RELIEF_AMOUNT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,ENERGY_CHARGE,input_dtype,,,,str,retain,
+missing,ENERGY_CHARGE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,ENERGY_CHARGE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,BOARD_CHARGE,input_dtype,,,,str,retain,
+missing,BOARD_CHARGE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,BOARD_CHARGE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,PROV_BILL_AMOUNT,input_dtype,,,,str,retain,
+missing,PROV_BILL_AMOUNT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,PROV_BILL_AMOUNT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,PAYMENT_AMOUNT,input_dtype,,,,str,retain,
+missing,PAYMENT_AMOUNT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,PAYMENT_AMOUNT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,BILL_AMOUNT,input_dtype,,,,str,retain,
+missing,BILL_AMOUNT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,BILL_AMOUNT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,START_METER,input_dtype,,,,str,retain,
+missing,START_METER,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,START_METER,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,END_METER,input_dtype,,,,str,retain,
+missing,END_METER,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,END_METER,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,AVG_UNIT,input_dtype,,,,str,retain,
+missing,AVG_UNIT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,AVG_UNIT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,RE_START_READING,input_dtype,,,,str,retain,
+missing,RE_START_READING,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,RE_START_READING,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,RE_END_READING,input_dtype,,,,str,retain,
+missing,RE_END_READING,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,RE_END_READING,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,RE_CONSUMPTION,input_dtype,,,,str,retain,
+missing,RE_CONSUMPTION,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,RE_CONSUMPTION,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,BILL_DATE,input_dtype,,,,str,retain,
+missing,BILL_DATE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,BILL_DATE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,DUE_DATE,input_dtype,,,,str,retain,
+missing,DUE_DATE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,DUE_DATE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,PAYMENT_DATE,input_dtype,,,,str,retain,
+missing,PAYMENT_DATE,standard_pandas_missing,12057.0,73578.0,16.386691674141726,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,PAYMENT_DATE,literal_blank_or_whitespace,12057.0,73578.0,16.386691674141726,,retain,
+disguised_missing,PAYMENT_DATE,[blank/whitespace],12057.0,73578.0,16.386691674141726,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,FEEDER_CODE,input_dtype,,,,str,retain,
+missing,FEEDER_CODE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,FEEDER_CODE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,FEEDER_NAME,input_dtype,,,,str,retain,
+missing,FEEDER_NAME,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,FEEDER_NAME,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,VILLAGE_NAME,input_dtype,,,,str,retain,
+missing,VILLAGE_NAME,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,VILLAGE_NAME,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,TARRIF_SHORT,input_dtype,,,,str,retain,
+missing,TARRIF_SHORT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,TARRIF_SHORT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,METER_CHANGE_DATE,input_dtype,,,,str,retain,
+missing,METER_CHANGE_DATE,standard_pandas_missing,73309.0,73578.0,99.63440158743103,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,METER_CHANGE_DATE,literal_blank_or_whitespace,73309.0,73578.0,99.63440158743103,,retain,
+disguised_missing,METER_CHANGE_DATE,[blank/whitespace],73309.0,73578.0,99.63440158743103,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,ADJUSTMENT_UNIT,input_dtype,,,,str,retain,
+missing,ADJUSTMENT_UNIT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,ADJUSTMENT_UNIT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,OLD_TARIFF_IND,input_dtype,,,,str,retain,
+missing,OLD_TARIFF_IND,standard_pandas_missing,46508.0,73578.0,63.20911141917421,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,OLD_TARIFF_IND,literal_blank_or_whitespace,46508.0,73578.0,63.20911141917421,,retain,
+disguised_missing,OLD_TARIFF_IND,[blank/whitespace],46508.0,73578.0,63.20911141917421,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,BILL_DEMAND,input_dtype,,,,str,retain,
+missing,BILL_DEMAND,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,BILL_DEMAND,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,BILL_TYPE,input_dtype,,,,str,retain,
+missing,BILL_TYPE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,BILL_TYPE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,STATUS,input_dtype,,,,str,retain,
+missing,STATUS,standard_pandas_missing,72556.0,73578.0,98.610997852619,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,STATUS,literal_blank_or_whitespace,72556.0,73578.0,98.610997852619,,retain,
+disguised_missing,STATUS,[blank/whitespace],72556.0,73578.0,98.610997852619,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,LAST_PAYDATE,input_dtype,,,,str,retain,
+missing,LAST_PAYDATE,standard_pandas_missing,398.0,73578.0,0.5409225583734268,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,LAST_PAYDATE,literal_blank_or_whitespace,398.0,73578.0,0.5409225583734268,,retain,
+disguised_missing,LAST_PAYDATE,[blank/whitespace],398.0,73578.0,0.5409225583734268,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,PREV_BILL_DATE,input_dtype,,,,str,retain,
+missing,PREV_BILL_DATE,standard_pandas_missing,2087.0,73578.0,2.836445676696839,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,PREV_BILL_DATE,literal_blank_or_whitespace,2087.0,73578.0,2.836445676696839,,retain,
+disguised_missing,PREV_BILL_DATE,[blank/whitespace],2087.0,73578.0,2.836445676696839,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,ACTUAL_DEMAND,input_dtype,,,,str,retain,
+missing,ACTUAL_DEMAND,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,ACTUAL_DEMAND,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_CONSUMER,input_dtype,,,,str,retain,
+missing,SOLAR_CONSUMER,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SOLAR_CONSUMER,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_AGREEMENT_DATE,input_dtype,,,,str,retain,
+missing,SOLAR_AGREEMENT_DATE,standard_pandas_missing,70517.0,73578.0,95.83978906738427,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SOLAR_AGREEMENT_DATE,literal_blank_or_whitespace,70517.0,73578.0,95.83978906738427,,retain,
+disguised_missing,SOLAR_AGREEMENT_DATE,[blank/whitespace],70517.0,73578.0,95.83978906738427,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,SOLAR_RATE,input_dtype,,,,str,retain,
+missing,SOLAR_RATE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SOLAR_RATE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,IMP_CONSUMPTION,input_dtype,,,,str,retain,
+missing,IMP_CONSUMPTION,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,IMP_CONSUMPTION,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,EXP_CONSUMPTION,input_dtype,,,,str,retain,
+missing,EXP_CONSUMPTION,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,EXP_CONSUMPTION,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_PURCHASE,input_dtype,,,,str,retain,
+missing,SOLAR_PURCHASE,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SOLAR_PURCHASE,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_ADJUSTMENT,input_dtype,,,,str,retain,
+missing,SOLAR_ADJUSTMENT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SOLAR_ADJUSTMENT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,AMR_INDICATOR,input_dtype,,,,str,retain,
+missing,AMR_INDICATOR,standard_pandas_missing,62290.0,73578.0,84.65845769115768,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,AMR_INDICATOR,literal_blank_or_whitespace,62290.0,73578.0,84.65845769115768,,retain,
+disguised_missing,AMR_INDICATOR,[blank/whitespace],62290.0,73578.0,84.65845769115768,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,TDS_ADJ,input_dtype,,,,str,retain,
+missing,TDS_ADJ,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,TDS_ADJ,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_LOAD,input_dtype,,,,str,retain,
+missing,SOLAR_LOAD,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SOLAR_LOAD,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_CONN_TYPE,input_dtype,,,,str,retain,
+missing,SOLAR_CONN_TYPE,standard_pandas_missing,70574.0,73578.0,95.91725787599555,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,SOLAR_CONN_TYPE,literal_blank_or_whitespace,70574.0,73578.0,95.91725787599555,,retain,
+disguised_missing,SOLAR_CONN_TYPE,[blank/whitespace],70574.0,73578.0,95.91725787599555,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,GENRATION_UNIT,input_dtype,,,,str,retain,
+missing,GENRATION_UNIT,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,GENRATION_UNIT,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,FINAL_MF,input_dtype,,,,str,retain,
+missing,FINAL_MF,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,FINAL_MF,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,TOU_CHG,input_dtype,,,,str,retain,
+missing,TOU_CHG,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,TOU_CHG,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+inspection,Unnamed: 90,input_dtype,,,,str,retain,
+missing,Unnamed: 90,standard_pandas_missing,73578.0,73578.0,100.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,Unnamed: 90,literal_blank_or_whitespace,73578.0,73578.0,100.0,,retain,
+disguised_missing,Unnamed: 90,[blank/whitespace],73578.0,73578.0,100.0,,retain,Candidate only; category codes and numeric sentinel-like values retained unless explicit typed conversion fails.
+inspection,PERIOD,input_dtype,,,,str,retain,
+missing,PERIOD,standard_pandas_missing,0.0,73578.0,0.0,,retain,Default NA parsing is diagnostic only; working strings preserved.
+missing,PERIOD,literal_blank_or_whitespace,0.0,73578.0,0.0,,retain,
+artifact,Unnamed: 90,exists,,,,True,retain,
+artifact,Unnamed: 90,total_rows,73578.0,73578.0,100.0,,retain,
+artifact,Unnamed: 90,null_count_standard_parser,73578.0,73578.0,100.0,,retain,
+artifact,Unnamed: 90,non_null_count_standard_parser,0.0,73578.0,0.0,,retain,
+artifact,Unnamed: 90,blank_count_literal,73578.0,73578.0,100.0,,retain,
+artifact,Unnamed: 90,non_blank_count_literal,0.0,73578.0,0.0,,retain,
+artifact,Unnamed: 90,unique_nonblank_values,0.0,,,[],retain,
+action,Unnamed: 90,column_removed,1.0,,,,drop column,Empty source-format artifact created by the trailing pipe delimiter; contains no analytical information.
+duplicates,,duplicate_key_rows_all_members,0.0,73578.0,0.0,,retain,
+duplicates,,exact_duplicate_rows_all_members,0.0,73578.0,0.0,,retain,
+duplicates,,conflicting_duplicate_rows_all_members,0.0,73578.0,0.0,,retain,
+action,,exact_duplicate_rows_removed,0.0,73578.0,0.0,,remove identical repeats only,Keep first identical full original record; retain distinct conflicting records.
+conversion,MONTH,values_before,73578.0,,,,retain,
+conversion,MONTH,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,MONTH,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,MONTH,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,MONTH,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,YEAR,values_before,73578.0,,,,retain,
+conversion,YEAR,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,YEAR,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,YEAR,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,YEAR,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,SD_AMOUNT,values_before,73578.0,,,,retain,
+conversion,SD_AMOUNT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,SD_AMOUNT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,SD_AMOUNT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,SD_AMOUNT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,CONTRACT_LOAD,values_before,73578.0,,,,retain,
+conversion,CONTRACT_LOAD,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,CONTRACT_LOAD,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,CONTRACT_LOAD,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,CONTRACT_LOAD,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,EDUTY_AMOUNT,values_before,73578.0,,,,retain,
+conversion,EDUTY_AMOUNT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,EDUTY_AMOUNT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,EDUTY_AMOUNT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,EDUTY_AMOUNT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,CONTRACT_DEMAND,values_before,73578.0,,,,retain,
+conversion,CONTRACT_DEMAND,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,CONTRACT_DEMAND,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,CONTRACT_DEMAND,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,CONTRACT_DEMAND,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,THEFT_ARREARS,values_before,73578.0,,,,retain,
+conversion,THEFT_ARREARS,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,THEFT_ARREARS,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,THEFT_ARREARS,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,THEFT_ARREARS,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,LITIGATION_ARREARS,values_before,73578.0,,,,retain,
+conversion,LITIGATION_ARREARS,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,LITIGATION_ARREARS,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,LITIGATION_ARREARS,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,LITIGATION_ARREARS,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,FIXED_CHG,values_before,73578.0,,,,retain,
+conversion,FIXED_CHG,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,FIXED_CHG,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,FIXED_CHG,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,FIXED_CHG,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,FUEL_CHG,values_before,73578.0,,,,retain,
+conversion,FUEL_CHG,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,FUEL_CHG,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,FUEL_CHG,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,FUEL_CHG,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,FUSE_CHG,values_before,73578.0,,,,retain,
+conversion,FUSE_CHG,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,FUSE_CHG,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,FUSE_CHG,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,FUSE_CHG,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,CREDIT_ADJUSTMENT,values_before,73578.0,,,,retain,
+conversion,CREDIT_ADJUSTMENT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,CREDIT_ADJUSTMENT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,CREDIT_ADJUSTMENT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,CREDIT_ADJUSTMENT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,DEBIT_ADJUSTMENT,values_before,73578.0,,,,retain,
+conversion,DEBIT_ADJUSTMENT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,DEBIT_ADJUSTMENT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,DEBIT_ADJUSTMENT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,DEBIT_ADJUSTMENT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,CLOSING_ARREARS,values_before,73578.0,,,,retain,
+conversion,CLOSING_ARREARS,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,CLOSING_ARREARS,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,CLOSING_ARREARS,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,CLOSING_ARREARS,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,CONSUMPTION_UNIT,values_before,73578.0,,,,retain,
+conversion,CONSUMPTION_UNIT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,CONSUMPTION_UNIT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,CONSUMPTION_UNIT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,CONSUMPTION_UNIT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,ASSESSMENT_UNIT,values_before,73578.0,,,,retain,
+conversion,ASSESSMENT_UNIT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,ASSESSMENT_UNIT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,ASSESSMENT_UNIT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,ASSESSMENT_UNIT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,DPC_AMOUNT,values_before,73578.0,,,,retain,
+conversion,DPC_AMOUNT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,DPC_AMOUNT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,DPC_AMOUNT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,DPC_AMOUNT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,RELIEF_AMOUNT,values_before,73578.0,,,,retain,
+conversion,RELIEF_AMOUNT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,RELIEF_AMOUNT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,RELIEF_AMOUNT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,RELIEF_AMOUNT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,ENERGY_CHARGE,values_before,73578.0,,,,retain,
+conversion,ENERGY_CHARGE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,ENERGY_CHARGE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,ENERGY_CHARGE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,ENERGY_CHARGE,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,BOARD_CHARGE,values_before,73578.0,,,,retain,
+conversion,BOARD_CHARGE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,BOARD_CHARGE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,BOARD_CHARGE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,BOARD_CHARGE,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,PROV_BILL_AMOUNT,values_before,73578.0,,,,retain,
+conversion,PROV_BILL_AMOUNT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,PROV_BILL_AMOUNT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,PROV_BILL_AMOUNT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,PROV_BILL_AMOUNT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,PAYMENT_AMOUNT,values_before,73578.0,,,,retain,
+conversion,PAYMENT_AMOUNT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,PAYMENT_AMOUNT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,PAYMENT_AMOUNT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,PAYMENT_AMOUNT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,BILL_AMOUNT,values_before,73578.0,,,,retain,
+conversion,BILL_AMOUNT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,BILL_AMOUNT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,BILL_AMOUNT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,BILL_AMOUNT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,START_METER,values_before,73578.0,,,,retain,
+conversion,START_METER,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,START_METER,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,START_METER,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,START_METER,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,END_METER,values_before,73578.0,,,,retain,
+conversion,END_METER,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,END_METER,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,END_METER,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,END_METER,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,AVG_UNIT,values_before,73578.0,,,,retain,
+conversion,AVG_UNIT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,AVG_UNIT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,AVG_UNIT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,AVG_UNIT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,RE_START_READING,values_before,73578.0,,,,retain,
+conversion,RE_START_READING,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,RE_START_READING,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,RE_START_READING,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,RE_START_READING,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,RE_END_READING,values_before,73578.0,,,,retain,
+conversion,RE_END_READING,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,RE_END_READING,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,RE_END_READING,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,RE_END_READING,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,RE_CONSUMPTION,values_before,73578.0,,,,retain,
+conversion,RE_CONSUMPTION,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,RE_CONSUMPTION,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,RE_CONSUMPTION,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,RE_CONSUMPTION,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,ADJUSTMENT_UNIT,values_before,73578.0,,,,retain,
+conversion,ADJUSTMENT_UNIT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,ADJUSTMENT_UNIT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,ADJUSTMENT_UNIT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,ADJUSTMENT_UNIT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,BILL_DEMAND,values_before,73578.0,,,,retain,
+conversion,BILL_DEMAND,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,BILL_DEMAND,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,BILL_DEMAND,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,BILL_DEMAND,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,ACTUAL_DEMAND,values_before,73578.0,,,,retain,
+conversion,ACTUAL_DEMAND,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,ACTUAL_DEMAND,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,ACTUAL_DEMAND,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,ACTUAL_DEMAND,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,SOLAR_RATE,values_before,73578.0,,,,retain,
+conversion,SOLAR_RATE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,SOLAR_RATE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,SOLAR_RATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,SOLAR_RATE,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,IMP_CONSUMPTION,values_before,73578.0,,,,retain,
+conversion,IMP_CONSUMPTION,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,IMP_CONSUMPTION,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,IMP_CONSUMPTION,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,IMP_CONSUMPTION,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,EXP_CONSUMPTION,values_before,73578.0,,,,retain,
+conversion,EXP_CONSUMPTION,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,EXP_CONSUMPTION,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,EXP_CONSUMPTION,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,EXP_CONSUMPTION,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,SOLAR_PURCHASE,values_before,73578.0,,,,retain,
+conversion,SOLAR_PURCHASE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,SOLAR_PURCHASE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,SOLAR_PURCHASE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,SOLAR_PURCHASE,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,SOLAR_ADJUSTMENT,values_before,73578.0,,,,retain,
+conversion,SOLAR_ADJUSTMENT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,SOLAR_ADJUSTMENT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,SOLAR_ADJUSTMENT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,SOLAR_ADJUSTMENT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,TDS_ADJ,values_before,73578.0,,,,retain,
+conversion,TDS_ADJ,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,TDS_ADJ,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,TDS_ADJ,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,TDS_ADJ,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,SOLAR_LOAD,values_before,73578.0,,,,retain,
+conversion,SOLAR_LOAD,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,SOLAR_LOAD,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,SOLAR_LOAD,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,SOLAR_LOAD,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,GENRATION_UNIT,values_before,73578.0,,,,retain,
+conversion,GENRATION_UNIT,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,GENRATION_UNIT,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,GENRATION_UNIT,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,GENRATION_UNIT,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,FINAL_MF,values_before,73578.0,,,,retain,
+conversion,FINAL_MF,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,FINAL_MF,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,FINAL_MF,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,FINAL_MF,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,TOU_CHG,values_before,73578.0,,,,retain,
+conversion,TOU_CHG,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,TOU_CHG,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,TOU_CHG,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,TOU_CHG,type_conversion,,,,,to_numeric,Explicit quantity/amount schema; preserve codes as strings.
+conversion,CONNECTION_DATE,values_before,73578.0,,,,retain,
+conversion,CONNECTION_DATE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,CONNECTION_DATE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,CONNECTION_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,CONNECTION_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,PDC_DATE,values_before,73578.0,,,,retain,
+conversion,PDC_DATE,nonblank_before,53.0,73578.0,0.07203240098942619,,retain,
+conversion,PDC_DATE,blank_to_missing,73525.0,73578.0,99.92796759901057,,retain,
+conversion,PDC_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,PDC_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,SD_AMOUNT_RECEIPT_DATE,values_before,73578.0,,,,retain,
+conversion,SD_AMOUNT_RECEIPT_DATE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,SD_AMOUNT_RECEIPT_DATE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,SD_AMOUNT_RECEIPT_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,SD_AMOUNT_RECEIPT_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,BILL_DATE,values_before,73578.0,,,,retain,
+conversion,BILL_DATE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,BILL_DATE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,BILL_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,BILL_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,DUE_DATE,values_before,73578.0,,,,retain,
+conversion,DUE_DATE,nonblank_before,73578.0,73578.0,100.0,,retain,
+conversion,DUE_DATE,blank_to_missing,0.0,73578.0,0.0,,retain,
+conversion,DUE_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,DUE_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,PAYMENT_DATE,values_before,73578.0,,,,retain,
+conversion,PAYMENT_DATE,nonblank_before,61521.0,73578.0,83.61330832585827,,retain,
+conversion,PAYMENT_DATE,blank_to_missing,12057.0,73578.0,16.386691674141726,,retain,
+conversion,PAYMENT_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,PAYMENT_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,METER_CHANGE_DATE,values_before,73578.0,,,,retain,
+conversion,METER_CHANGE_DATE,nonblank_before,269.0,73578.0,0.3655984125689744,,retain,
+conversion,METER_CHANGE_DATE,blank_to_missing,73309.0,73578.0,99.63440158743103,,retain,
+conversion,METER_CHANGE_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,METER_CHANGE_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,LAST_PAYDATE,values_before,73578.0,,,,retain,
+conversion,LAST_PAYDATE,nonblank_before,73180.0,73578.0,99.45907744162658,,retain,
+conversion,LAST_PAYDATE,blank_to_missing,398.0,73578.0,0.5409225583734268,,retain,
+conversion,LAST_PAYDATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,LAST_PAYDATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,PREV_BILL_DATE,values_before,73578.0,,,,retain,
+conversion,PREV_BILL_DATE,nonblank_before,71491.0,73578.0,97.16355432330316,,retain,
+conversion,PREV_BILL_DATE,blank_to_missing,2087.0,73578.0,2.836445676696839,,retain,
+conversion,PREV_BILL_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,PREV_BILL_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+conversion,SOLAR_AGREEMENT_DATE,values_before,73578.0,,,,retain,
+conversion,SOLAR_AGREEMENT_DATE,nonblank_before,3061.0,73578.0,4.160210932615728,,retain,
+conversion,SOLAR_AGREEMENT_DATE,blank_to_missing,70517.0,73578.0,95.83978906738427,,retain,
+conversion,SOLAR_AGREEMENT_DATE,nonblank_conversion_failures,0.0,73578.0,0.0,,retain,Original failed values saved locally; records retained.
+action,SOLAR_AGREEMENT_DATE,type_conversion,,,,,to_datetime,Observed YYYY-MM-DD format; blank dates become NaT.
+coverage,PERIOD,expected_history_exact_match,,,,True,retain,
+coverage,PERIOD,minimum,,,,2023-04,retain,
+coverage,PERIOD,maximum,,,,2026-03,retain,
+logical,PERIOD,invalid_or_missing_PERIOD,0.0,73578.0,0.0,,retain,Retained for review.
+logical,CONSUMER_NO,missing_consumer_identifier,0.0,73578.0,0.0,,retain,Identifier remains a string.
+tracking,CONSUMER_NO,unique_consumers,2087.0,,,,retain,
+logical,MONTH,invalid_MONTH,0.0,73578.0,0.0,,retain,Expected history domain.
+logical,MONTH,MONTH_PERIOD_mismatch,0.0,73578.0,0.0,,retain,Must agree with PERIOD.
+logical,YEAR,invalid_YEAR,0.0,73578.0,0.0,,retain,Expected history domain.
+logical,YEAR,YEAR_PERIOD_mismatch,0.0,73578.0,0.0,,retain,Must agree with PERIOD.
+logical,,record_before_connection_month,0.0,73578.0,0.0,,retain,Monthly comparison avoids false positives within connection month.
+logical,,negative_tenure_months,0.0,73578.0,0.0,,retain,Same chronology condition; no tenure feature created.
+logical,MONTH,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,YEAR,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,SD_AMOUNT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,SD_AMOUNT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,CONTRACT_LOAD,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,CONTRACT_LOAD,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,EDUTY_AMOUNT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,EDUTY_AMOUNT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,CONTRACT_DEMAND,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,CONTRACT_DEMAND,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,THEFT_ARREARS,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,THEFT_ARREARS,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,LITIGATION_ARREARS,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,LITIGATION_ARREARS,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,FIXED_CHG,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,FIXED_CHG,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,FUEL_CHG,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,FUEL_CHG,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,FUSE_CHG,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,FUSE_CHG,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,CREDIT_ADJUSTMENT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,CREDIT_ADJUSTMENT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,DEBIT_ADJUSTMENT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,DEBIT_ADJUSTMENT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,CLOSING_ARREARS,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,CLOSING_ARREARS,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,CONSUMPTION_UNIT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,CONSUMPTION_UNIT,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,ASSESSMENT_UNIT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,ASSESSMENT_UNIT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,DPC_AMOUNT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,DPC_AMOUNT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,RELIEF_AMOUNT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,RELIEF_AMOUNT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,ENERGY_CHARGE,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,ENERGY_CHARGE,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,BOARD_CHARGE,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,BOARD_CHARGE,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,PROV_BILL_AMOUNT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,PROV_BILL_AMOUNT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,PAYMENT_AMOUNT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,PAYMENT_AMOUNT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,BILL_AMOUNT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,BILL_AMOUNT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,START_METER,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,START_METER,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,END_METER,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,END_METER,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,AVG_UNIT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,AVG_UNIT,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,RE_START_READING,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,RE_START_READING,negative_physical_quantity,6.0,73578.0,0.008154611432765229,,retain,Physically suspect; retained for review.
+logical,RE_END_READING,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,RE_END_READING,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,RE_CONSUMPTION,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,RE_CONSUMPTION,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,ADJUSTMENT_UNIT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,ADJUSTMENT_UNIT,negative_amount_or_adjustment_review,1789.0,73578.0,2.431433308869499,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,BILL_DEMAND,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,BILL_DEMAND,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,ACTUAL_DEMAND,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,ACTUAL_DEMAND,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,SOLAR_RATE,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,SOLAR_RATE,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,IMP_CONSUMPTION,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,IMP_CONSUMPTION,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,EXP_CONSUMPTION,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,EXP_CONSUMPTION,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,SOLAR_PURCHASE,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,SOLAR_PURCHASE,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,SOLAR_ADJUSTMENT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,SOLAR_ADJUSTMENT,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,TDS_ADJ,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,TDS_ADJ,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,SOLAR_LOAD,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,SOLAR_LOAD,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,GENRATION_UNIT,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,GENRATION_UNIT,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,FINAL_MF,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,FINAL_MF,negative_physical_quantity,0.0,73578.0,0.0,,retain,Physically suspect; retained for review.
+logical,TOU_CHG,nonfinite_numeric,0.0,73578.0,0.0,,retain,Nonfinite measurement requires review.
+logical,TOU_CHG,negative_amount_or_adjustment_review,0.0,73578.0,0.0,,retain,"Accounting signs are undocumented; credits, reversals and signed adjustments may be valid. Retain."
+logical,BILL_AMOUNT,nonpositive_bill,999.0,73578.0,1.3577428035554107,,retain,Retain record; zero use can be genuine; nonpositive bills require later revenue eligibility rules.
+logical,CONSUMPTION_UNIT,zero_consumption,1022.0,73578.0,1.3890021473810106,,retain,Retain record; zero use can be genuine; nonpositive bills require later revenue eligibility rules.
+logical,CONTRACT_LOAD,zero_contract_load,0.0,73578.0,0.0,,retain,Retain record; zero use can be genuine; nonpositive bills require later revenue eligibility rules.
+logical,,DUE_DATE_before_BILL_DATE,0.0,73578.0,0.0,,retain,Chronology review only; pre-bill payments can be legitimate advances.
+logical,,BILL_DATE_before_PREV_BILL_DATE,0.0,73578.0,0.0,,retain,Chronology review only; pre-bill payments can be legitimate advances.
+logical,,BILL_DATE_before_CONNECTION_DATE,50.0,73578.0,0.06795509527304357,,retain,Chronology review only; pre-bill payments can be legitimate advances.
+logical,,PDC_DATE_before_CONNECTION_DATE,0.0,73578.0,0.0,,retain,Chronology review only; pre-bill payments can be legitimate advances.
+logical,,METER_CHANGE_DATE_before_CONNECTION_DATE,0.0,73578.0,0.0,,retain,Chronology review only; pre-bill payments can be legitimate advances.
+logical,,PAYMENT_DATE_before_BILL_DATE,0.0,73578.0,0.0,,retain,Chronology review only; pre-bill payments can be legitimate advances.
+logical,,zero_consumption_with_positive_bill,35.0,73578.0,0.0475685666911305,,retain,Context only: fixed charges or earlier balances can coexist with zero use/bills. No eligibility target created.
+logical,,zero_consumption_with_nonpositive_bill,987.0,73578.0,1.34143358068988,,retain,Context only: fixed charges or earlier balances can coexist with zero use/bills. No eligibility target created.
+logical,,nonpositive_bill_with_positive_consumption,12.0,73578.0,0.016309222865530458,,retain,Context only: fixed charges or earlier balances can coexist with zero use/bills. No eligibility target created.
+logical,,nonpositive_bill_with_payment,9.0,73578.0,0.012231917149147844,,retain,Context only: fixed charges or earlier balances can coexist with zero use/bills. No eligibility target created.
+logical,,negative_bill,0.0,73578.0,0.0,,retain,Context only: fixed charges or earlier balances can coexist with zero use/bills. No eligibility target created.
+logical,,zero_bill,999.0,73578.0,1.3577428035554107,,retain,Context only: fixed charges or earlier balances can coexist with zero use/bills. No eligibility target created.
+disguised_missing,IND_TYPE,asterisk_semantics,,,,*,retain,"Asterisk is a suspicious categorical code with undocumented meaning; preserved, not converted to missing."
+descriptive,CONSUMPTION_UNIT,count,,,,73578.0,retain,
+descriptive,CONSUMPTION_UNIT,mean,,,,661.8979613471419,retain,
+descriptive,CONSUMPTION_UNIT,std,,,,2501.9430347507036,retain,
+descriptive,CONSUMPTION_UNIT,min,,,,0.0,retain,
+descriptive,CONSUMPTION_UNIT,25%,,,,100.4,retain,
+descriptive,CONSUMPTION_UNIT,50%,,,,167.0,retain,
+descriptive,CONSUMPTION_UNIT,75%,,,,277.8,retain,
+descriptive,CONSUMPTION_UNIT,max,,,,86238.4,retain,
+outlier,CONSUMPTION_UNIT,IQR,,,,177.4,retain,
+outlier,CONSUMPTION_UNIT,IQR_lower,,,,-165.70000000000002,retain,
+outlier,CONSUMPTION_UNIT,IQR_upper,,,,543.9000000000001,retain,
+outlier,CONSUMPTION_UNIT,potential_outliers,7568.0,73578.0,10.285683220527876,,retain,"1.5 IQR rule on finite observations; extremes retained. Zero IQR is a degenerate fence, not proof of error."
+descriptive,BILL_AMOUNT,count,,,,73578.0,retain,
+descriptive,BILL_AMOUNT,mean,,,,5478.781821468374,retain,
+descriptive,BILL_AMOUNT,std,,,,20709.861414230567,retain,
+descriptive,BILL_AMOUNT,min,,,,0.0,retain,
+descriptive,BILL_AMOUNT,25%,,,,585.615,retain,
+descriptive,BILL_AMOUNT,50%,,,,1041.085,retain,
+descriptive,BILL_AMOUNT,75%,,,,2544.53,retain,
+descriptive,BILL_AMOUNT,max,,,,692764.73,retain,
+outlier,BILL_AMOUNT,IQR,,,,1958.9150000000002,retain,
+outlier,BILL_AMOUNT,IQR_lower,,,,-2352.7575000000006,retain,
+outlier,BILL_AMOUNT,IQR_upper,,,,5482.9025,retain,
+outlier,BILL_AMOUNT,potential_outliers,6605.0,73578.0,8.976868085569055,,retain,"1.5 IQR rule on finite observations; extremes retained. Zero IQR is a degenerate fence, not proof of error."
+descriptive,PAYMENT_AMOUNT,count,,,,73578.0,retain,
+descriptive,PAYMENT_AMOUNT,mean,,,,5508.9757378564245,retain,
+descriptive,PAYMENT_AMOUNT,std,,,,24868.079030586425,retain,
+descriptive,PAYMENT_AMOUNT,min,,,,0.0,retain,
+descriptive,PAYMENT_AMOUNT,25%,,,,435.965,retain,
+descriptive,PAYMENT_AMOUNT,50%,,,,931.35,retain,
+descriptive,PAYMENT_AMOUNT,75%,,,,2481.405,retain,
+descriptive,PAYMENT_AMOUNT,max,,,,1088666.32,retain,
+outlier,PAYMENT_AMOUNT,IQR,,,,2045.4400000000003,retain,
+outlier,PAYMENT_AMOUNT,IQR_lower,,,,-2632.195,retain,
+outlier,PAYMENT_AMOUNT,IQR_upper,,,,5549.5650000000005,retain,
+outlier,PAYMENT_AMOUNT,potential_outliers,6849.0,73578.0,9.30848895050151,,retain,"1.5 IQR rule on finite observations; extremes retained. Zero IQR is a degenerate fence, not proof of error."
+descriptive,CLOSING_ARREARS,count,,,,73578.0,retain,
+descriptive,CLOSING_ARREARS,mean,,,,1915.5484152871784,retain,
+descriptive,CLOSING_ARREARS,std,,,,17561.68869095052,retain,
+descriptive,CLOSING_ARREARS,min,,,,0.0,retain,
+descriptive,CLOSING_ARREARS,25%,,,,0.0,retain,
+descriptive,CLOSING_ARREARS,50%,,,,51.41,retain,
+descriptive,CLOSING_ARREARS,75%,,,,296.3675,retain,
+descriptive,CLOSING_ARREARS,max,,,,730567.74,retain,
+outlier,CLOSING_ARREARS,IQR,,,,296.3675,retain,
+outlier,CLOSING_ARREARS,IQR_lower,,,,-444.55125,retain,
+outlier,CLOSING_ARREARS,IQR_upper,,,,740.91875,retain,
+outlier,CLOSING_ARREARS,potential_outliers,11847.0,73578.0,16.101280273994945,,retain,"1.5 IQR rule on finite observations; extremes retained. Zero IQR is a degenerate fence, not proof of error."
+descriptive,CONTRACT_LOAD,count,,,,73578.0,retain,
+descriptive,CONTRACT_LOAD,mean,,,,5.6196674277637335,retain,
+descriptive,CONTRACT_LOAD,std,,,,12.823347504305087,retain,
+descriptive,CONTRACT_LOAD,min,,,,0.5,retain,
+descriptive,CONTRACT_LOAD,25%,,,,1.47,retain,
+descriptive,CONTRACT_LOAD,50%,,,,2.3,retain,
+descriptive,CONTRACT_LOAD,75%,,,,4.2,retain,
+descriptive,CONTRACT_LOAD,max,,,,154.81,retain,
+outlier,CONTRACT_LOAD,IQR,,,,2.7300000000000004,retain,
+outlier,CONTRACT_LOAD,IQR_lower,,,,-2.625000000000001,retain,
+outlier,CONTRACT_LOAD,IQR_upper,,,,8.295000000000002,retain,
+outlier,CONTRACT_LOAD,potential_outliers,6613.0,73578.0,8.987740900812742,,retain,"1.5 IQR rule on finite observations; extremes retained. Zero IQR is a degenerate fence, not proof of error."
+categorical,TARRIF,unique_categories,8.0,,,,retain,
+categorical,TARRIF,blank_missing,0.0,73578.0,0.0,,retain,
+categorical,TARRIF,category_frequency,41909.0,73578.0,56.95860175595966,RGPU,retain,
+categorical,TARRIF,category_frequency,23189.0,73578.0,31.516214085732148,NRGP,retain,
+categorical,TARRIF,category_frequency,3581.0,73578.0,4.866943923455381,LTMD,retain,
+categorical,TARRIF,category_frequency,2485.0,73578.0,3.3773682350702656,DTR,retain,
+categorical,TARRIF,category_frequency,2123.0,73578.0,2.8853733452934303,TMP,retain,
+categorical,TARRIF,category_frequency,144.0,73578.0,0.1957106743863655,GLP.SL,retain,
+categorical,TARRIF,category_frequency,75.0,73578.0,0.10193264290956536,A2,retain,
+categorical,TARRIF,category_frequency,72.0,73578.0,0.09785533719318275,GLP,retain,
+categorical,TARRIF,normalization_collision_groups,0.0,,,,retain,Diagnostic case/whitespace check only; no categories recoded.
+categorical,METER_STATUS,unique_categories,5.0,,,,retain,
+categorical,METER_STATUS,blank_missing,0.0,73578.0,0.0,,retain,
+categorical,METER_STATUS,category_frequency,71193.0,73578.0,96.75854195547582,C,retain,
+categorical,METER_STATUS,category_frequency,959.0,73578.0,1.3033787273369757,X,retain,
+categorical,METER_STATUS,category_frequency,769.0,73578.0,1.0451493652994102,L,retain,
+categorical,METER_STATUS,category_frequency,594.0,73578.0,0.8073065318437577,F,retain,
+categorical,METER_STATUS,category_frequency,63.0,73578.0,0.0856234200440349,Y,retain,
+categorical,METER_STATUS,normalization_collision_groups,0.0,,,,retain,Diagnostic case/whitespace check only; no categories recoded.
+categorical,SOLAR_CONSUMER,unique_categories,2.0,,,,retain,
+categorical,SOLAR_CONSUMER,blank_missing,0.0,73578.0,0.0,,retain,
+categorical,SOLAR_CONSUMER,category_frequency,70574.0,73578.0,95.91725787599555,N,retain,
+categorical,SOLAR_CONSUMER,category_frequency,3004.0,73578.0,4.082742124004458,Y,retain,
+categorical,SOLAR_CONSUMER,normalization_collision_groups,0.0,,,,retain,Diagnostic case/whitespace check only; no categories recoded.
+categorical,PHASE,unique_categories,3.0,,,,retain,
+categorical,PHASE,blank_missing,0.0,73578.0,0.0,,retain,
+categorical,PHASE,category_frequency,59717.0,73578.0,81.16148848840686,S,retain,
+categorical,PHASE,category_frequency,12797.0,73578.0,17.39242708418277,T,retain,
+categorical,PHASE,category_frequency,1064.0,73578.0,1.4460844274103672,P,retain,
+categorical,PHASE,normalization_collision_groups,0.0,,,,retain,Diagnostic case/whitespace check only; no categories recoded.
+boundary,,identifier_policy,,,,"CONSUMER_NO for grouping/joins/tracking only. Names, addresses, meter numbers and all identifiers excluded from future predictive features.",retain,
+duplicates,,remaining_duplicate_key_rows,0.0,73578.0,0.0,,retain,
+action,,blanket_placeholder_replacements,0.0,,,,retain,"Only explicit numeric/date coercions, exact repeat removal and empty artifact removal allowed."
+inspection,MONTH,output_dtype,,,,int64,retain,
+missing_after,MONTH,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,YEAR,output_dtype,,,,int64,retain,
+missing_after,YEAR,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CIRCLE_CODE,output_dtype,,,,str,retain,
+missing_after,CIRCLE_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CIRCLE_NAME,output_dtype,,,,str,retain,
+missing_after,CIRCLE_NAME,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,DIVISION_CODE,output_dtype,,,,str,retain,
+missing_after,DIVISION_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,DIVISION_NAME,output_dtype,,,,str,retain,
+missing_after,DIVISION_NAME,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SUBDIV_CODE,output_dtype,,,,str,retain,
+missing_after,SUBDIV_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SUBDIV_NAME,output_dtype,,,,str,retain,
+missing_after,SUBDIV_NAME,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,LOCATION_CODE,output_dtype,,,,str,retain,
+missing_after,LOCATION_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CONSUMER_NO,output_dtype,,,,str,retain,
+missing_after,CONSUMER_NO,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CONSUMER_NAME,output_dtype,,,,str,retain,
+missing_after,CONSUMER_NAME,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,ADDRESS1,output_dtype,,,,str,retain,
+missing_after,ADDRESS1,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,ADDRESS2,output_dtype,,,,str,retain,
+missing_after,ADDRESS2,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CENCUS_CODE,output_dtype,,,,str,retain,
+missing_after,CENCUS_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,TRANS_LOCATION,output_dtype,,,,str,retain,
+missing_after,TRANS_LOCATION,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SD_AMOUNT,output_dtype,,,,float64,retain,
+missing_after,SD_AMOUNT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CONNECTION_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,CONNECTION_DATE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,POLE_CODE,output_dtype,,,,str,retain,
+missing_after,POLE_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,PDC_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,PDC_DATE,typed_missing,73525.0,73578.0,99.92796759901057,,retain,
+inspection,IND_TYPE,output_dtype,,,,str,retain,
+missing_after,IND_TYPE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SEASONAL_IND,output_dtype,,,,str,retain,
+missing_after,SEASONAL_IND,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SD_AMOUNT_RECEIPT_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,SD_AMOUNT_RECEIPT_DATE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SD_AMOUNT_RECEIPT_NO,output_dtype,,,,str,retain,
+missing_after,SD_AMOUNT_RECEIPT_NO,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CONTRACT_LOAD,output_dtype,,,,float64,retain,
+missing_after,CONTRACT_LOAD,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,TARRIF,output_dtype,,,,str,retain,
+missing_after,TARRIF,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CYCLE_NO,output_dtype,,,,str,retain,
+missing_after,CYCLE_NO,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,METER_READER_NO,output_dtype,,,,str,retain,
+missing_after,METER_READER_NO,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,BOOK_NO,output_dtype,,,,str,retain,
+missing_after,BOOK_NO,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,ROUTE_CODE,output_dtype,,,,str,retain,
+missing_after,ROUTE_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,METER_NO,output_dtype,,,,str,retain,
+missing_after,METER_NO,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,METER_STATUS,output_dtype,,,,str,retain,
+missing_after,METER_STATUS,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,EDUTY_CODE,output_dtype,,,,str,retain,
+missing_after,EDUTY_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,EDUTY_AMOUNT,output_dtype,,,,float64,retain,
+missing_after,EDUTY_AMOUNT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CONTRACT_DEMAND,output_dtype,,,,float64,retain,
+missing_after,CONTRACT_DEMAND,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,FEEDER_NO,output_dtype,,,,str,retain,
+missing_after,FEEDER_NO,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,PHASE,output_dtype,,,,str,retain,
+missing_after,PHASE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,METER_RENT_TYPE,output_dtype,,,,str,retain,
+missing_after,METER_RENT_TYPE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,THEFT_ARREARS,output_dtype,,,,float64,retain,
+missing_after,THEFT_ARREARS,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,LITIGATION_ARREARS,output_dtype,,,,float64,retain,
+missing_after,LITIGATION_ARREARS,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,FIXED_CHG,output_dtype,,,,float64,retain,
+missing_after,FIXED_CHG,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,FUEL_CHG,output_dtype,,,,float64,retain,
+missing_after,FUEL_CHG,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,FUSE_CHG,output_dtype,,,,float64,retain,
+missing_after,FUSE_CHG,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CREDIT_ADJUSTMENT,output_dtype,,,,float64,retain,
+missing_after,CREDIT_ADJUSTMENT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,DEBIT_ADJUSTMENT,output_dtype,,,,float64,retain,
+missing_after,DEBIT_ADJUSTMENT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CLOSING_ARREARS,output_dtype,,,,float64,retain,
+missing_after,CLOSING_ARREARS,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,CONSUMPTION_UNIT,output_dtype,,,,float64,retain,
+missing_after,CONSUMPTION_UNIT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,ASSESSMENT_UNIT,output_dtype,,,,float64,retain,
+missing_after,ASSESSMENT_UNIT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,DPC_AMOUNT,output_dtype,,,,float64,retain,
+missing_after,DPC_AMOUNT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,RELIEF_AMOUNT,output_dtype,,,,float64,retain,
+missing_after,RELIEF_AMOUNT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,ENERGY_CHARGE,output_dtype,,,,float64,retain,
+missing_after,ENERGY_CHARGE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,BOARD_CHARGE,output_dtype,,,,float64,retain,
+missing_after,BOARD_CHARGE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,PROV_BILL_AMOUNT,output_dtype,,,,float64,retain,
+missing_after,PROV_BILL_AMOUNT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,PAYMENT_AMOUNT,output_dtype,,,,float64,retain,
+missing_after,PAYMENT_AMOUNT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,BILL_AMOUNT,output_dtype,,,,float64,retain,
+missing_after,BILL_AMOUNT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,START_METER,output_dtype,,,,float64,retain,
+missing_after,START_METER,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,END_METER,output_dtype,,,,float64,retain,
+missing_after,END_METER,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,AVG_UNIT,output_dtype,,,,float64,retain,
+missing_after,AVG_UNIT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,RE_START_READING,output_dtype,,,,float64,retain,
+missing_after,RE_START_READING,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,RE_END_READING,output_dtype,,,,float64,retain,
+missing_after,RE_END_READING,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,RE_CONSUMPTION,output_dtype,,,,float64,retain,
+missing_after,RE_CONSUMPTION,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,BILL_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,BILL_DATE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,DUE_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,DUE_DATE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,PAYMENT_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,PAYMENT_DATE,typed_missing,12057.0,73578.0,16.386691674141726,,retain,
+inspection,FEEDER_CODE,output_dtype,,,,str,retain,
+missing_after,FEEDER_CODE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,FEEDER_NAME,output_dtype,,,,str,retain,
+missing_after,FEEDER_NAME,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,VILLAGE_NAME,output_dtype,,,,str,retain,
+missing_after,VILLAGE_NAME,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,TARRIF_SHORT,output_dtype,,,,str,retain,
+missing_after,TARRIF_SHORT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,METER_CHANGE_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,METER_CHANGE_DATE,typed_missing,73309.0,73578.0,99.63440158743103,,retain,
+inspection,ADJUSTMENT_UNIT,output_dtype,,,,float64,retain,
+missing_after,ADJUSTMENT_UNIT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,OLD_TARIFF_IND,output_dtype,,,,str,retain,
+missing_after,OLD_TARIFF_IND,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,BILL_DEMAND,output_dtype,,,,float64,retain,
+missing_after,BILL_DEMAND,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,BILL_TYPE,output_dtype,,,,str,retain,
+missing_after,BILL_TYPE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,STATUS,output_dtype,,,,str,retain,
+missing_after,STATUS,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,LAST_PAYDATE,output_dtype,,,,datetime64[us],retain,
+missing_after,LAST_PAYDATE,typed_missing,398.0,73578.0,0.5409225583734268,,retain,
+inspection,PREV_BILL_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,PREV_BILL_DATE,typed_missing,2087.0,73578.0,2.836445676696839,,retain,
+inspection,ACTUAL_DEMAND,output_dtype,,,,float64,retain,
+missing_after,ACTUAL_DEMAND,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_CONSUMER,output_dtype,,,,str,retain,
+missing_after,SOLAR_CONSUMER,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_AGREEMENT_DATE,output_dtype,,,,datetime64[us],retain,
+missing_after,SOLAR_AGREEMENT_DATE,typed_missing,70517.0,73578.0,95.83978906738427,,retain,
+inspection,SOLAR_RATE,output_dtype,,,,float64,retain,
+missing_after,SOLAR_RATE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,IMP_CONSUMPTION,output_dtype,,,,float64,retain,
+missing_after,IMP_CONSUMPTION,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,EXP_CONSUMPTION,output_dtype,,,,float64,retain,
+missing_after,EXP_CONSUMPTION,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_PURCHASE,output_dtype,,,,float64,retain,
+missing_after,SOLAR_PURCHASE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_ADJUSTMENT,output_dtype,,,,float64,retain,
+missing_after,SOLAR_ADJUSTMENT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,AMR_INDICATOR,output_dtype,,,,str,retain,
+missing_after,AMR_INDICATOR,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,TDS_ADJ,output_dtype,,,,float64,retain,
+missing_after,TDS_ADJ,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_LOAD,output_dtype,,,,float64,retain,
+missing_after,SOLAR_LOAD,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,SOLAR_CONN_TYPE,output_dtype,,,,str,retain,
+missing_after,SOLAR_CONN_TYPE,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,GENRATION_UNIT,output_dtype,,,,float64,retain,
+missing_after,GENRATION_UNIT,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,FINAL_MF,output_dtype,,,,int64,retain,
+missing_after,FINAL_MF,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,TOU_CHG,output_dtype,,,,float64,retain,
+missing_after,TOU_CHG,typed_missing,0.0,73578.0,0.0,,retain,
+inspection,PERIOD,output_dtype,,,,str,retain,
+missing_after,PERIOD,typed_missing,0.0,73578.0,0.0,,retain,
+shape,,rows_after,73578.0,,,,retain,
+shape,,columns_after,91.0,,,,retain,
+verification,,public_sources_and_combined_unchanged,,,,True,retain,"File sizes and modification times unchanged: 36 public originals, 36 raw copies and combined CSV. Metadata check only, not byte verification. Private files never opened."
+verification,,status,,,,completed,retain,

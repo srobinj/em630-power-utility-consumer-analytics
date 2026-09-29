@@ -35,4 +35,12 @@ Run from the project root in PowerShell after installing Python with its launche
 3. Install: python -m pip install -r requirements.txt
 4. Starter dashboard: python -m streamlit run dashboard/app.py
 
-Data processing and model commands will be added in later numbered steps. Prompt 0 implements no modelling.
+Implemented data-processing commands are listed below. Model commands will be added in later numbered steps; no modelling is implemented yet.
+
+## Implemented data-processing run sequence
+With the existing environment active, run from the project root:
+
+1. Step 2 (only when loading or refreshing approved public inputs): `python src/data_loading.py`
+2. Step 3: `python src/cleaning.py`
+
+For the existing Step 2 output, run only Step 3. It writes the ignored local `data/processed/consumer_cleaned.csv` and the aggregate `reports/summaries/cleaning_summary.csv`. Detailed inspection files stay under ignored `reports/internal_validation/step3/`. Review flagged values before later work; cleaning does not impute, create targets, split data or train models. Identifiers must be loaded as strings in later scripts. Later numbered stages remain unimplemented.
