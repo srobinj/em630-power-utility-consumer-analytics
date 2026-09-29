@@ -1,0 +1,271 @@
+{
+  "status": "passed",
+  "file_count": 36,
+  "source_column_count": 91,
+  "schema_note": "90 named source fields plus the empty trailing field, retained as Unnamed: 90. PERIOD is added as column 92.",
+  "total_rows": 73578,
+  "unique_consumers": 2087,
+  "first_actual_month": "2023-04",
+  "latest_actual_month": "2026-03",
+  "next_prediction_month": "2026-04",
+  "duplicate_consumer_month_rows": 0,
+  "late_joiner_consumers": 87,
+  "unverifiable_connection_date_rows": 0,
+  "inconsistent_connection_date_consumers": 0,
+  "rows_before_connection": 0,
+  "first_appearance_note": "Observed minimum month, not proof of the real connection date; earlier history is not fabricated.",
+  "files": [
+    {
+      "filename": "512LDG42023.txt",
+      "period": "2023-04",
+      "row_count": 2000,
+      "column_count": 91,
+      "unique_consumers": 2000
+    },
+    {
+      "filename": "512LDG52023.txt",
+      "period": "2023-05",
+      "row_count": 2002,
+      "column_count": 91,
+      "unique_consumers": 2002
+    },
+    {
+      "filename": "512LDG62023.txt",
+      "period": "2023-06",
+      "row_count": 2005,
+      "column_count": 91,
+      "unique_consumers": 2005
+    },
+    {
+      "filename": "512LDG72023.txt",
+      "period": "2023-07",
+      "row_count": 2008,
+      "column_count": 91,
+      "unique_consumers": 2008
+    },
+    {
+      "filename": "512LDG82023.txt",
+      "period": "2023-08",
+      "row_count": 2011,
+      "column_count": 91,
+      "unique_consumers": 2011
+    },
+    {
+      "filename": "512LDG92023.txt",
+      "period": "2023-09",
+      "row_count": 2013,
+      "column_count": 91,
+      "unique_consumers": 2013
+    },
+    {
+      "filename": "512LDG102023.txt",
+      "period": "2023-10",
+      "row_count": 2016,
+      "column_count": 91,
+      "unique_consumers": 2016
+    },
+    {
+      "filename": "512LDG112023.txt",
+      "period": "2023-11",
+      "row_count": 2018,
+      "column_count": 91,
+      "unique_consumers": 2018
+    },
+    {
+      "filename": "512LDG122023.txt",
+      "period": "2023-12",
+      "row_count": 2021,
+      "column_count": 91,
+      "unique_consumers": 2021
+    },
+    {
+      "filename": "512LDG12024.txt",
+      "period": "2024-01",
+      "row_count": 2023,
+      "column_count": 91,
+      "unique_consumers": 2023
+    },
+    {
+      "filename": "512LDG22024.txt",
+      "period": "2024-02",
+      "row_count": 2025,
+      "column_count": 91,
+      "unique_consumers": 2025
+    },
+    {
+      "filename": "512LDG32024.txt",
+      "period": "2024-03",
+      "row_count": 2027,
+      "column_count": 91,
+      "unique_consumers": 2027
+    },
+    {
+      "filename": "512LDG42024.txt",
+      "period": "2024-04",
+      "row_count": 2030,
+      "column_count": 91,
+      "unique_consumers": 2030
+    },
+    {
+      "filename": "512LDG52024.txt",
+      "period": "2024-05",
+      "row_count": 2032,
+      "column_count": 91,
+      "unique_consumers": 2032
+    },
+    {
+      "filename": "512LDG62024.txt",
+      "period": "2024-06",
+      "row_count": 2035,
+      "column_count": 91,
+      "unique_consumers": 2035
+    },
+    {
+      "filename": "512LDG72024.txt",
+      "period": "2024-07",
+      "row_count": 2038,
+      "column_count": 91,
+      "unique_consumers": 2038
+    },
+    {
+      "filename": "512LDG82024.txt",
+      "period": "2024-08",
+      "row_count": 2040,
+      "column_count": 91,
+      "unique_consumers": 2040
+    },
+    {
+      "filename": "512LDG92024.txt",
+      "period": "2024-09",
+      "row_count": 2042,
+      "column_count": 91,
+      "unique_consumers": 2042
+    },
+    {
+      "filename": "512LDG102024.txt",
+      "period": "2024-10",
+      "row_count": 2044,
+      "column_count": 91,
+      "unique_consumers": 2044
+    },
+    {
+      "filename": "512LDG112024.txt",
+      "period": "2024-11",
+      "row_count": 2047,
+      "column_count": 91,
+      "unique_consumers": 2047
+    },
+    {
+      "filename": "512LDG122024.txt",
+      "period": "2024-12",
+      "row_count": 2050,
+      "column_count": 91,
+      "unique_consumers": 2050
+    },
+    {
+      "filename": "512LDG12025.txt",
+      "period": "2025-01",
+      "row_count": 2053,
+      "column_count": 91,
+      "unique_consumers": 2053
+    },
+    {
+      "filename": "512LDG22025.txt",
+      "period": "2025-02",
+      "row_count": 2055,
+      "column_count": 91,
+      "unique_consumers": 2055
+    },
+    {
+      "filename": "512LDG32025.txt",
+      "period": "2025-03",
+      "row_count": 2057,
+      "column_count": 91,
+      "unique_consumers": 2057
+    },
+    {
+      "filename": "512LDG42025.txt",
+      "period": "2025-04",
+      "row_count": 2060,
+      "column_count": 91,
+      "unique_consumers": 2060
+    },
+    {
+      "filename": "512LDG52025.txt",
+      "period": "2025-05",
+      "row_count": 2062,
+      "column_count": 91,
+      "unique_consumers": 2062
+    },
+    {
+      "filename": "512LDG62025.txt",
+      "period": "2025-06",
+      "row_count": 2065,
+      "column_count": 91,
+      "unique_consumers": 2065
+    },
+    {
+      "filename": "512LDG72025.txt",
+      "period": "2025-07",
+      "row_count": 2068,
+      "column_count": 91,
+      "unique_consumers": 2068
+    },
+    {
+      "filename": "512LDG82025.txt",
+      "period": "2025-08",
+      "row_count": 2070,
+      "column_count": 91,
+      "unique_consumers": 2070
+    },
+    {
+      "filename": "512LDG92025.txt",
+      "period": "2025-09",
+      "row_count": 2073,
+      "column_count": 91,
+      "unique_consumers": 2073
+    },
+    {
+      "filename": "512LDG102025.txt",
+      "period": "2025-10",
+      "row_count": 2076,
+      "column_count": 91,
+      "unique_consumers": 2076
+    },
+    {
+      "filename": "512LDG112025.txt",
+      "period": "2025-11",
+      "row_count": 2078,
+      "column_count": 91,
+      "unique_consumers": 2078
+    },
+    {
+      "filename": "512LDG122025.txt",
+      "period": "2025-12",
+      "row_count": 2080,
+      "column_count": 91,
+      "unique_consumers": 2080
+    },
+    {
+      "filename": "512LDG12026.txt",
+      "period": "2026-01",
+      "row_count": 2082,
+      "column_count": 91,
+      "unique_consumers": 2082
+    },
+    {
+      "filename": "512LDG22026.txt",
+      "period": "2026-02",
+      "row_count": 2085,
+      "column_count": 91,
+      "unique_consumers": 2085
+    },
+    {
+      "filename": "512LDG32026.txt",
+      "period": "2026-03",
+      "row_count": 2087,
+      "column_count": 91,
+      "unique_consumers": 2087
+    }
+  ]
+}
