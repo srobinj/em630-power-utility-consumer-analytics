@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+data/processed/
+_ground_truth_injected_anomalies.csv
+_generation_config.json
+reports/internal_validation/
+# Original source stays private; only monthly copies are published.
+Dataset/
+data/new/*
+!data/new/.gitkeep
+models/*
+!models/.gitkeep
