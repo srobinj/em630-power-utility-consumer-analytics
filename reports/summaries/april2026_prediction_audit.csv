@@ -1,0 +1,4 @@
+module,source_path,rows,unique_consumers,unique_consumer_period_keys,target_periods,expected_target_period,expected_consumers,duplicate_consumer_period_rows,missing_predictions,nonfinite_predictions,unknown_class_labels,missing_probabilities,probabilities_outside_0_1,class_1_probability_audit,status
+Consumption Prediction,reports/summaries/next_month_consumption_predictions.csv,2087,2087,2087,2026-04,2026-04,2087,0,0,0,,,,Not applicable,PASS
+Revenue Risk Prediction,reports/summaries/next_month_revenue_risk_predictions.csv,2087,2087,2087,2026-04,2026-04,2087,0,0,0,0.0,0.0,0.0,"PASS: classes_=[0, 1], Class 1 column=1",PASS
+Unusual Consumption Risk Prediction,reports/summaries/next_month_anomaly_predictions.csv,2087,2087,2087,2026-04,2026-04,2087,0,0,0,0.0,0.0,0.0,"PASS: classes_=[0, 1], Class 1 column=1",PASS

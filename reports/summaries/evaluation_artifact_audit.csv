@@ -1,0 +1,15 @@
+module,artifact,expected_path,exists,status_reason
+Consumption Prediction,Model comparison,reports/summaries/consumption_model_comparison.csv,True,PASS: present. Required saved comparison
+Consumption Prediction,FINAL TEST actual versus predicted,reports/figures/consumption_final_test_actual_vs_predicted.png,True,PASS: present. Required regression evaluation figure
+Consumption Prediction,FINAL TEST residual plot,reports/figures/consumption_final_test_residuals.png,True,PASS: present. Required regression evaluation figure
+Consumption Prediction,Frozen pre-refit model,models/consumption_frozen_train_pipeline.joblib,True,PASS: present. Confirms held-out evaluator was preserved
+Revenue Risk Prediction,Model comparison,reports/summaries/revenue_model_comparison.csv,True,PASS: present. Required saved comparison
+Revenue Risk Prediction,FINAL TEST confusion matrix,reports/figures/revenue_final_test_confusion_matrix.png,True,PASS: present. Required classification figure
+Revenue Risk Prediction,FINAL TEST ROC,reports/figures/revenue_final_test_roc.png,True,PASS: present. Required classification figure
+Revenue Risk Prediction,Feature importance,reports/figures/revenue_feature_importance.png,True,PASS: present. Required supported-model figure
+Revenue Risk Prediction,Frozen pre-refit model,models/revenue_frozen_train_pipeline.joblib,True,PASS: present. Confirms held-out evaluator was preserved
+Unusual Consumption Risk Prediction,Model comparison,reports/summaries/anomaly_model_comparison.csv,True,PASS: present. Current official comparison; RF-4 remains experimental only
+Unusual Consumption Risk Prediction,FINAL TEST confusion matrix,reports/figures/anomaly_final_test_confusion_matrix.png,True,PASS: present. Must represent official DT-3-balanced
+Unusual Consumption Risk Prediction,FINAL TEST ROC,reports/figures/anomaly_final_test_roc.png,True,PASS: present. Must represent official DT-3-balanced
+Unusual Consumption Risk Prediction,Feature importance,reports/figures/anomaly_feature_importance.png,True,PASS: present. Must represent official DT-3-balanced
+Unusual Consumption Risk Prediction,Frozen pre-refit model,models/anomaly_frozen_train_pipeline.joblib,True,PASS: present. Must be official DT-3-balanced
