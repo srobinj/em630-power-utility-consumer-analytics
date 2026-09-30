@@ -1,0 +1,11 @@
+kind,feature_1,feature_2,correlation,complete_rows,note
+TRAIN pairwise correlation,CURRENT_CONSUMPTION,CONSUMPTION_LAG1,0.9078268747252581,46635.0,Absolute Pearson correlation >=0.90; coefficient interpretation can be unstable; predictor retained.
+TRAIN pairwise correlation,CURRENT_CONSUMPTION,RECENT_MEAN_3,0.9514301275632029,44580.0,Absolute Pearson correlation >=0.90; coefficient interpretation can be unstable; predictor retained.
+TRAIN pairwise correlation,CONSUMPTION_LAG1,CONSUMPTION_LAG2,0.9062029335281089,44580.0,Absolute Pearson correlation >=0.90; coefficient interpretation can be unstable; predictor retained.
+TRAIN pairwise correlation,CONSUMPTION_LAG1,RECENT_MEAN_3,0.9766265321417434,44580.0,Absolute Pearson correlation >=0.90; coefficient interpretation can be unstable; predictor retained.
+TRAIN pairwise correlation,CONSUMPTION_LAG2,CONSUMPTION_LAG3,0.9048533632371766,42527.0,Absolute Pearson correlation >=0.90; coefficient interpretation can be unstable; predictor retained.
+TRAIN pairwise correlation,CONSUMPTION_LAG2,RECENT_MEAN_3,0.9513539801555201,44580.0,Absolute Pearson correlation >=0.90; coefficient interpretation can be unstable; predictor retained.
+mathematical relationship,,,,,RECENT_MEAN_3 = (CURRENT_CONSUMPTION + CONSUMPTION_LAG1 + CONSUMPTION_LAG2)/3 on complete rows.
+mathematical relationship,,,,,CONSUMPTION_TREND_3 = CURRENT_CONSUMPTION - CONSUMPTION_LAG2 on complete rows.
+mathematical relationship,,,,,Independent median imputation can break exact relationships on incomplete rows; strong dependence remains.
+mathematical relationship,,,,,Full one-hot indicators with an intercept also create coefficient redundancy; ordinary least squares handles rank deficiency.

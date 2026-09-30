@@ -35,7 +35,7 @@ Run from the project root in PowerShell after installing Python with its launche
 3. Install: python -m pip install -r requirements.txt
 4. Starter dashboard: python -m streamlit run dashboard/app.py
 
-Implemented data-processing commands are listed below. Model commands will be added in later numbered steps; no modelling is implemented yet.
+Implemented data-processing and consumption-model commands are listed below. Revenue and unusual-consumption modelling remain for later steps.
 
 ## Implemented data-processing run sequence
 With the existing environment active, run from the project root:
@@ -68,4 +68,15 @@ Run `python src/splits.py`. Each module keeps its own known-target rows, partiti
 
 Only eligible TRAIN rows enter feature relevance. Consumption Pearson tests use one paired predictor/target mean per consumer. Consumption categories and the cyclic TARGET_MONTH receive descriptive group summaries. Classification numeric features receive descriptive monthly Class 0/Class 1 summaries without inferential tests. Classifier Chi-square samples require both the predictor category and target class to stay constant in the consumer's eligible TRAIN history; changing/invalid histories are excluded from that test only. All three current Chi-square tests are skipped because these stable subsets contain just one target class. No majority-class consumer label, category merging or replacement test is introduced.
 
-feature_significance.csv records results and limitations; feature_relevance_contingencies.csv records observed/expected tables. feature_selection_rationale.csv retains all 36 module-specific planned candidates provisionally based on domain relevance, timing and leakage checks, with TRAIN evidence documented. Statistical significance does not select features or establish causal effects. Skewness, missingness, unequal histories, shared conditions and stable-subset selection limit inference. Later model validation must establish predictive usefulness. No model training has started.
+feature_significance.csv records results and limitations; feature_relevance_contingencies.csv records observed/expected tables. feature_selection_rationale.csv retains all 36 module-specific planned candidates provisionally based on domain relevance, timing and leakage checks, with TRAIN evidence documented. Statistical significance does not select features or establish causal effects. Skewness, missingness, unequal histories, shared conditions and stable-subset selection limit inference. Later model validation must establish predictive usefulness. Step 6 itself performs no model training.
+
+## Step 7: consumption model comparison and April prediction
+`python src/train_consumption.py` reads the four existing Step 6 consumption partitions directly. It compares persistence, four prescribed ordinary Multiple Linear Regression feature sets, and four prescribed Random Forest configurations. Numeric median imputation and categorical imputation/one-hot encoding (including TARGET_MONTH) are inside each pipeline and fitted on TRAIN only during comparison. No scaling, extra algorithms or additional parameter search is used.
+
+MLR-4 was selected before FINAL TEST evaluation because it had the lowest VALIDATION RMSE (921.19), with MAE 152.91. The preserved TRAIN-fitted model and persistence alone were evaluated on FINAL TEST: RMSE 934.70 versus 972.04; MAE 130.24 versus 141.15; R² 0.8108 versus 0.7954. Correlated and mathematically related predictors make individual linear coefficients unreliable to interpret; predictors were not automatically removed.
+
+After evaluation, a fresh clone of the entire unchanged MLR-4 pipeline was fitted on all 71,491 labelled TRAIN + VALIDATION + FINAL TEST rows. It generated 2,087 finite April-2026 predictions, covering every FUTURE consumer. April actuals are unavailable, so no April accuracy metric is calculated. Predictions are not clipped; the current April predictions are all nonnegative.
+
+models/consumption_frozen_train_pipeline.joblib preserves the evaluated model; models/consumption_april2026_pipeline.joblib holds the fully refitted prediction model. Comparison, selection, metrics, preprocessing audit and coverage summaries are under reports/summaries/, with two FINAL TEST figures under reports/figures/. Row-level FINAL TEST predictions remain in ignored data/processed/consumption_final_test_predictions.csv. The requested reports/summaries/next_month_consumption_predictions.csv is explicitly ignored because it contains consumer lookup keys. No names or addresses are included.
+
+The script refuses to overwrite existing FINAL TEST results. It has already completed; do not rerun it to retest or retune. Use the saved pipelines and reports. Synthetic data, extreme residuals, correlated predictors and changes across months limit generalization. Revenue Risk modelling has not started.

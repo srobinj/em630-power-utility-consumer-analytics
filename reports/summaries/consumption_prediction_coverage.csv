@@ -1,0 +1,2 @@
+selected_configuration,labelled_refit_rows,future_rows,predictions,unique_consumers,coverage_percent,target_period,finite_predictions,negative_predictions,minimum_prediction,maximum_prediction,notes
+MLR-4,71491,2087,2087,2087,100.0,2026-04,2087,0,52.40023373897782,46869.78992769032,No April actuals or accuracy metrics. Predictions are not clipped. Synthetic utility history; extremes and distribution changes limit generalization.

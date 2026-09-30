@@ -12,3 +12,5 @@ data/new/*
 models/*
 !models/.gitkeep
 PROJECT_STATUS.md
+# Step 7 row-level dashboard predictions remain local.
+reports/summaries/next_month_consumption_predictions.csv
