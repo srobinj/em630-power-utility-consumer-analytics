@@ -1,0 +1,14 @@
+Metric,Count,Percent_of_eligible,Value
+eligible_positive_bill_valid_due,72579.0,100.0,
+due_on_or_before_cutoff,43453.0,59.86993482963392,
+due_after_cutoff,29126.0,40.13006517036608,
+by_due_valid_amount,8613.0,11.867068986897037,
+by_due_missing_invalid_amount,0.0,0.0,
+no_payment_by_due,63966.0,88.13293101310296,
+eligible_unknown_payment_date,0.0,0.0,
+due_day_minimum,,,1.0
+due_day_Q1,,,6.0
+due_day_median,,,18.0
+due_day_Q3,,,24.0
+due_day_maximum,,,31.0
+due_day_mean,,,16.065197922264016
