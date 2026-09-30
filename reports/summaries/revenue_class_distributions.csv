@@ -1,0 +1,7 @@
+partition,class,count,percent,definition
+TRAIN,0,5747,11.920268812743716,Academic proxy: Class 1 means less than 50% paid by due date; Class 0 means at least 50%.
+TRAIN,1,42465,88.07973118725629,Academic proxy: Class 1 means less than 50% paid by due date; Class 0 means at least 50%.
+VALIDATION,0,1437,11.84177997527812,Academic proxy: Class 1 means less than 50% paid by due date; Class 0 means at least 50%.
+VALIDATION,1,10698,88.15822002472189,Academic proxy: Class 1 means less than 50% paid by due date; Class 0 means at least 50%.
+FINAL_TEST,0,1164,11.473632331197635,Academic proxy: Class 1 means less than 50% paid by due date; Class 0 means at least 50%.
+FINAL_TEST,1,8981,88.52636766880237,Academic proxy: Class 1 means less than 50% paid by due date; Class 0 means at least 50%.

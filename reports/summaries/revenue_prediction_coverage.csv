@@ -1,0 +1,2 @@
+configuration,refit_labelled_rows,target_period,predictions,unique_consumers,coverage_percent,predicted_class_0,predicted_class_1,minimum_probability,maximum_probability,meaning
+RF-3-balanced,70492,2026-04,2087,2087,100.0,410,1677,0.19999566909414185,0.8097982549461382,Academic less-than-50%-paid-by-due-date proxy only; not official default/risk probability. No April outcomes or metrics.

@@ -14,3 +14,6 @@ models/*
 PROJECT_STATUS.md
 # Step 7 row-level dashboard predictions remain local.
 reports/summaries/next_month_consumption_predictions.csv
+# Step 8 row-level academic-risk predictions remain local.
+reports/summaries/next_month_revenue_risk_predictions.csv
+verify_step8_artifacts.py

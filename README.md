@@ -35,7 +35,7 @@ Run from the project root in PowerShell after installing Python with its launche
 3. Install: python -m pip install -r requirements.txt
 4. Starter dashboard: python -m streamlit run dashboard/app.py
 
-Implemented data-processing and consumption-model commands are listed below. Revenue and unusual-consumption modelling remain for later steps.
+Implemented data-processing, consumption-model and revenue-risk commands are listed below. Unusual-consumption modelling remains for a later step.
 
 ## Implemented data-processing run sequence
 With the existing environment active, run from the project root:
@@ -79,4 +79,16 @@ After evaluation, a fresh clone of the entire unchanged MLR-4 pipeline was fitte
 
 models/consumption_frozen_train_pipeline.joblib preserves the evaluated model; models/consumption_april2026_pipeline.joblib holds the fully refitted prediction model. Comparison, selection, metrics, preprocessing audit and coverage summaries are under reports/summaries/, with two FINAL TEST figures under reports/figures/. Row-level FINAL TEST predictions remain in ignored data/processed/consumption_final_test_predictions.csv. The requested reports/summaries/next_month_consumption_predictions.csv is explicitly ignored because it contains consumer lookup keys. No names or addresses are included.
 
-The script refuses to overwrite existing FINAL TEST results. It has already completed; do not rerun it to retest or retune. Use the saved pipelines and reports. Synthetic data, extreme residuals, correlated predictors and changes across months limit generalization. Revenue Risk modelling has not started.
+The script refuses to overwrite existing FINAL TEST results. It has already completed; do not rerun it to retest or retune. Use the saved pipelines and reports. Synthetic data, extreme residuals, correlated predictors and changes across months limit generalization.
+
+## Step 8: academic revenue-risk model and April prediction
+
+`python src/train_revenue_risk.py` reads the four existing Step 6 revenue partitions directly. It compares the TRAIN-majority baseline, four prescribed Decision Trees and four prescribed Random Forests. The strongest unweighted tree and forest are each tested once with `class_weight="balanced"`. Numeric median imputation and TARRIF imputation/one-hot encoding remain inside each pipeline and are fitted on TRAIN only during model comparison.
+
+RF-3-balanced (200 trees, maximum depth 10, balanced class weights and random state 42) was selected using VALIDATION results. Its validation ROC-AUC is 0.6390, Class-0 recall is 0.3939 and Class-0 F1 is 0.2808. The weighting trade-off lowers validation accuracy and Class-1 F1 compared with the majority-like unweighted RF-3, while producing useful Class-0 predictions with nearly the same ROC-AUC. No threshold tuning was performed.
+
+The frozen selected pipeline and TRAIN-majority baseline were evaluated once on FINAL TEST. RF-3-balanced has ROC-AUC 0.6370, Average Precision 0.9214, Class-0 F1 0.2715 and Class-1 F1 0.8570; the constant baseline has ROC-AUC 0.5000, Class-0 F1 0 and Class-1 F1 0.9391. Accuracy is 0.7609 versus 0.8853, illustrating why the imbalanced target is assessed with both-class and ranking metrics rather than accuracy alone.
+
+After FINAL TEST evaluation, a fresh clone of the unchanged selected pipeline was fitted on 70,492 labelled TRAIN + VALIDATION + FINAL TEST rows. It generated 2,087 April-2026 predictions with Class-1 probabilities from 0.2000 to 0.8098 and 100% FUTURE-consumer coverage. April outcomes are unavailable, so no April metric is calculated. These outputs are an academic less-than-50%-paid-by-due-date proxy, not an official utility default or revenue-risk classification.
+
+The saved audits verify Class-1 probability extraction from `classes_`, TRAIN-only preprocessing during selection and full-labelled-history preprocessing only for the April refit. The selected predictor allowlist excludes label-only `PAYMENT_RATIO_OUTCOME`, `AT_RISK_CURRENT` and the target. Row-level prediction outputs and fitted models remain ignored locally. The script protects preserved FINAL TEST outputs from accidental overwrite. Step 9 unusual-consumption-risk modelling has not started.
