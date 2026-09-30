@@ -1,0 +1,16 @@
+module,feature,target,category,target_class,observed,expected,sample
+revenue,TARRIF,AT_RISK_NEXT,DTR,1,34,34.0,stable eligible TRAIN consumers
+revenue,TARRIF,AT_RISK_NEXT,GLP,1,1,1.0,stable eligible TRAIN consumers
+revenue,TARRIF,AT_RISK_NEXT,GLP.SL,1,1,1.0,stable eligible TRAIN consumers
+revenue,TARRIF,AT_RISK_NEXT,LTMD,1,39,39.0,stable eligible TRAIN consumers
+revenue,TARRIF,AT_RISK_NEXT,NRGP,1,278,278.0,stable eligible TRAIN consumers
+revenue,TARRIF,AT_RISK_NEXT,RGPU,1,469,469.0,stable eligible TRAIN consumers
+revenue,TARRIF,AT_RISK_NEXT,TMP,1,22,22.0,stable eligible TRAIN consumers
+anomaly,TARRIF,ANOMALY_NEXT,DTR,0,11,11.0,stable eligible TRAIN consumers
+anomaly,TARRIF,ANOMALY_NEXT,GLP,0,2,2.0,stable eligible TRAIN consumers
+anomaly,TARRIF,ANOMALY_NEXT,LTMD,0,12,12.0,stable eligible TRAIN consumers
+anomaly,TARRIF,ANOMALY_NEXT,NRGP,0,100,100.0,stable eligible TRAIN consumers
+anomaly,TARRIF,ANOMALY_NEXT,RGPU,0,283,283.0,stable eligible TRAIN consumers
+anomaly,TARRIF,ANOMALY_NEXT,TMP,0,10,10.0,stable eligible TRAIN consumers
+anomaly,SOLAR_CONSUMER,ANOMALY_NEXT,N,0,400,400.0,stable eligible TRAIN consumers
+anomaly,SOLAR_CONSUMER,ANOMALY_NEXT,Y,0,9,9.0,stable eligible TRAIN consumers
