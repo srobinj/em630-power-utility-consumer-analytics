@@ -1,0 +1,21 @@
+Finding,Evidence,Modelling implication
+Consumer base changes over time,2000 to 2087 unique monthly consumers.,Consider changing exposure when examining temporal behaviour later.
+Consumption varies by calendar month,Highest pooled monthly mean: month 6; lowest: month 2. Growth and tariff mix may contribute.,Examine historical patterns during authorised Step 5; no feature selected here.
+Zero use and zero bills remain,1022 zero-consumption rows; 999 nonpositive bills.,Retain observations; later revenue eligibility must be explicit.
+Extremes and skewness remain,CONSUMPTION_UNIT skew=10.56; BILL_AMOUNT skew=9.82; PAYMENT_AMOUNT skew=13.40; CLOSING_ARREARS skew=21.26; CONTRACT_LOAD skew=5.58,Investigate skewness later; do not automatically remove extremes.
+Solar status can change,75 consumers change solar status; 75 excluded from Chi-square sample.,Respect information available at each month in later work.
+Chi-square assumption check,Test not performed: sparse expected cells make the Chi-square approximation unsuitable. No category merging or replacement test applied.,No feature selection from this exploratory check.
+CONSUMPTION_UNIT; BILL_AMOUNT,Consumer means: n=2087; r=0.9990; p=0.,Descriptive association only; assess target-specific relevance in Step 6 using TRAIN only.
+BILL_AMOUNT; PAYMENT_AMOUNT,Consumer means: n=2087; r=0.9958; p=0.,Descriptive association only; assess target-specific relevance in Step 6 using TRAIN only.
+Consumption differs across tariff groups,Highest monthly mean: LTMD (9217.17); lowest: RGPU (138.26) source units.,Categories may require encoding later; this is not a feature-selection decision.
+Solar and non-solar consumption distributions differ,N: monthly mean 680.06; Y: monthly mean 235.09. Tariff mix and changing status can confound this comparison.,Do not interpret group differences as an adoption effect.
+Arrears have a long upper tail,Mean 1915.55; median 51.41; maximum 730567.74 source currency units.,Examine extreme balances during later modelling without automatically deleting them.
+Payments need not equal bills in the same month,37400 monthly rows have payments above bills; payment timing and prior balances may contribute.,Later risk eligibility and timing rules need explicit definitions; no target is created here.
+Limitation / interpretation note,Synthetic/anonymized demonstration data may not generalize to real utilities.,Carry this limitation into later interpretation; no automatic feature decision.
+Limitation / interpretation note,Monthly rows repeat consumers; descriptive pooled summaries weight longer histories more.,Carry this limitation into later interpretation; no automatic feature decision.
+Limitation / interpretation note,Association does not imply causation; consumer independence and test assumptions matter.,Carry this limitation into later interpretation; no automatic feature decision.
+Limitation / interpretation note,Consumer averages lose month-to-month information and use unequal available histories.,Carry this limitation into later interpretation; no automatic feature decision.
+Limitation / interpretation note,Full-period EDA is descriptive and does not select or reject predictive features.,Carry this limitation into later interpretation; no automatic feature decision.
+Limitation / interpretation note,Extreme utility values are not automatically errors; skewness can distort Pearson summaries.,Carry this limitation into later interpretation; no automatic feature decision.
+Limitation / interpretation note,Kurtosis is pandas excess kurtosis (normal reference zero); standard deviation uses sample ddof=1.,Carry this limitation into later interpretation; no automatic feature decision.
+Limitation / interpretation note,"No season variable created. Calendar-month differences may reflect growth and category mix, not only seasonality.",Carry this limitation into later interpretation; no automatic feature decision.

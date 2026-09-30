@@ -1,0 +1,2 @@
+total_rows,total_columns,unique_consumers,earliest_month,latest_month,total_months,numeric_columns,categorical_object_columns,date_columns
+73578,91,2087,2023-04,2026-03,36,42,39,10

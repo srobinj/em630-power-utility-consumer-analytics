@@ -44,3 +44,8 @@ With the existing environment active, run from the project root:
 2. Step 3: `python src/cleaning.py`
 
 For the existing Step 2 output, run only Step 3. It writes the ignored local `data/processed/consumer_cleaned.csv` and the aggregate `reports/summaries/cleaning_summary.csv`. Detailed inspection files stay under ignored `reports/internal_validation/step3/`. Review flagged values before later work; cleaning does not impute, create targets, split data or train models. Identifiers must be loaded as strings in later scripts. Later numbered stages remain unimplemented.
+
+## Step 4: exploratory data analysis
+Run `python src/eda.py` with the existing environment active. It reads the cleaned CSV without modifying it and writes 15 descriptive figures and aggregate CSV summaries under reports/. These cover monthly consumption and consumer growth, distributions, billing/payment relationships, tariff/solar groups, calendar-month patterns and selected numeric correlations.
+
+Full-period EDA is descriptive and does not select ML features. Two Pearson tests use one available-history average per consumer. The TARRIF versus SOLAR_CONSUMER Chi-square analysis excludes changing/invalid consumer histories and checks expected frequencies before testing; it is skipped for the current sparse table. No replacement tests are added. All assumptions, exclusions and limitations are recorded in statistical_tests.csv, chi_square_sample_checks.csv and eda_findings.csv. No targets, lag features, splits or models are created. Step 5 remains unimplemented.
