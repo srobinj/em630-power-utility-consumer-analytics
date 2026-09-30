@@ -35,7 +35,7 @@ Run from the project root in PowerShell after installing Python with its launche
 3. Install: python -m pip install -r requirements.txt
 4. Starter dashboard: python -m streamlit run dashboard/app.py
 
-Implemented data-processing, consumption-model and revenue-risk commands are listed below. Unusual-consumption modelling remains for a later step.
+Implemented data-processing and all three model-training commands are listed below.
 
 ## Implemented data-processing run sequence
 With the existing environment active, run from the project root:
@@ -91,4 +91,16 @@ The frozen selected pipeline and TRAIN-majority baseline were evaluated once on 
 
 After FINAL TEST evaluation, a fresh clone of the unchanged selected pipeline was fitted on 70,492 labelled TRAIN + VALIDATION + FINAL TEST rows. It generated 2,087 April-2026 predictions with Class-1 probabilities from 0.2000 to 0.8098 and 100% FUTURE-consumer coverage. April outcomes are unavailable, so no April metric is calculated. These outputs are an academic less-than-50%-paid-by-due-date proxy, not an official utility default or revenue-risk classification.
 
-The saved audits verify Class-1 probability extraction from `classes_`, TRAIN-only preprocessing during selection and full-labelled-history preprocessing only for the April refit. The selected predictor allowlist excludes label-only `PAYMENT_RATIO_OUTCOME`, `AT_RISK_CURRENT` and the target. Row-level prediction outputs and fitted models remain ignored locally. The script protects preserved FINAL TEST outputs from accidental overwrite. Step 9 unusual-consumption-risk modelling has not started.
+The saved audits verify Class-1 probability extraction from `classes_`, TRAIN-only preprocessing during selection and full-labelled-history preprocessing only for the April refit. The selected predictor allowlist excludes label-only `PAYMENT_RATIO_OUTCOME`, `AT_RISK_CURRENT` and the target. Row-level prediction outputs and fitted models remain ignored locally. The script protects preserved FINAL TEST outputs from accidental overwrite.
+
+## Step 9: unusual-consumption-risk model and April prediction
+
+`python src/train_anomaly.py` loads the four existing Step 6 anomaly partitions directly. It compares the TRAIN-majority baseline, four prescribed Decision Trees and four prescribed Random Forests. Validation Class-1 F1 selects DT-3 and RF-4 for exactly one balanced-weight experiment each. No resampling, additional model configuration or threshold search is used.
+
+DT-3-balanced (maximum depth 8, balanced class weights and random state 42) is the official validation-selected model. Its validation Class-1 F1 is 0.2148, recall is 0.5238, precision is 0.1351, AP is 0.1609 and ROC-AUC is 0.7012. RF-4-balanced has a marginally higher validation F1 of 0.2306, but much lower anomaly recall of 0.2008 and severe overfitting: its TRAIN-to-validation F1/AP/ROC-AUC gaps are −0.7659/−0.8096/−0.2600, compared with −0.0470/−0.1034/−0.0976 for DT-3-balanced. This TRAIN/VALIDATION-only stability review applies the original multi-metric selection rule. FINAL TEST results did not influence the revision.
+
+The frozen DT-3-balanced model and TRAIN-majority baseline were evaluated on FINAL TEST. DT-3-balanced has Class-1 F1 0.1307, recall 0.3204, precision 0.0821, AP 0.1193 and ROC-AUC 0.6733. The baseline predicts only Class 0, giving Class-1 F1 and recall of zero, AP 0.0298 and ROC-AUC 0.5000. Accuracy is 0.8731 for the selected model and 0.9702 for the baseline; both-class and ranking metrics are required because Class 1 is rare.
+
+After evaluation, a fresh clone of the unchanged DT-3-balanced pipeline was fitted on all 67,324 labelled rows through target March 2026. It generated 2,087 April-2026 predictions with complete consumer coverage, 243 predicted Class-1 cases and probabilities from 0.00 to 1.00. April outcomes are unavailable, so no April accuracy metric is calculated. The previous RF-4-balanced evaluation and deployment artifacts are preserved locally under `data/processed/step9_rf4_balanced_history/`; official row-level outputs and fitted models remain ignored locally.
+
+`ANOMALY_NEXT` is a project-defined statistical proxy for unusual consumption. Predictions are decision-support indicators and do not establish electricity theft, fraud, meter tampering, or wrongdoing. The z=2.5 proxy rule remains unchanged. The predictor allowlist excludes `ANOMALY_CURRENT`, `RULE_Z_CURRENT`, `ANOMALY_NEXT` and unavailable future information.

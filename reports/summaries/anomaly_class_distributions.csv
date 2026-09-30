@@ -1,0 +1,7 @@
+partition,class,count,percent,definition
+TRAIN,0,41434,92.94302377747869,Class 1 is the project-defined unusual-consumption proxy; it is not theft or fraud.
+TRAIN,1,3146,7.05697622252131,Class 1 is the project-defined unusual-consumption proxy; it is not theft or fraud.
+VALIDATION,0,11590,93.7171504811191,Class 1 is the project-defined unusual-consumption proxy; it is not theft or fraud.
+VALIDATION,1,777,6.282849518880893,Class 1 is the project-defined unusual-consumption proxy; it is not theft or fraud.
+FINAL_TEST,0,10068,97.02226076900838,Class 1 is the project-defined unusual-consumption proxy; it is not theft or fraud.
+FINAL_TEST,1,309,2.977739230991616,Class 1 is the project-defined unusual-consumption proxy; it is not theft or fraud.

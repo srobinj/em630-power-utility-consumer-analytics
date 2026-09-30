@@ -1,0 +1,2 @@
+configuration,refit_labelled_rows,target_period,predictions,unique_consumers,coverage_percent,predicted_class_0,predicted_class_1,minimum_probability,maximum_probability,limitation
+DT-3-balanced,67324,2026-04,2087,2087,100.0,1844,243,0.0,1.0,"ANOMALY_NEXT is a project-defined statistical proxy for unusual consumption. Predictions are decision-support indicators and do not establish electricity theft, fraud, meter tampering, or wrongdoing."

@@ -16,4 +16,9 @@ PROJECT_STATUS.md
 reports/summaries/next_month_consumption_predictions.csv
 # Step 8 row-level academic-risk predictions remain local.
 reports/summaries/next_month_revenue_risk_predictions.csv
+# Step 9 row-level unusual-consumption predictions remain local.
+reports/summaries/next_month_anomaly_predictions.csv
 verify_step8_artifacts.py
+verify_step9_artifacts.py
+verify_step9_revision.py
+data/processed/step9_rf4_balanced_history/
