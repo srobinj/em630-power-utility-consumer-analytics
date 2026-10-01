@@ -62,7 +62,7 @@ def load_historical_data():
         "FEEDER_CODE", "FEEDER_NAME", "CONTRACT_LOAD", "SOLAR_CONSUMER",
         "CONSUMPTION_UNIT", "BILL_AMOUNT", "PAYMENT_AMOUNT", "CLOSING_ARREARS",
     ]
-    data = load_csv("data/processed/consumer_cleaned.csv", columns)
+    data = load_csv("data/public/dashboard_history.csv", columns)
     if data is None:
         return None
     data["PERIOD"] = pd.to_datetime(data["PERIOD"], errors="coerce")
@@ -257,7 +257,7 @@ def page_overview():
 
     historical = load_historical_data()
     if historical is None:
-        file_error("Historical analytics", "data/processed/consumer_cleaned.csv")
+        file_error("Historical analytics", "data/public/dashboard_history.csv")
         return
 
     with st.container(border=True):
@@ -430,7 +430,7 @@ def page_consumer_360():
         return
     historical = load_historical_data()
     if historical is None:
-        file_error("Consumer history", "data/processed/consumer_cleaned.csv")
+        file_error("Consumer history", "data/public/dashboard_history.csv")
         return
     consumers = predictions["CONSUMER_NO"].dropna().sort_values().tolist()
     selected_consumer = st.selectbox("Select Consumer Number", consumers, key="consumer_360_selector")

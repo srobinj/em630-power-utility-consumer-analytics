@@ -34,3 +34,13 @@ verify_step9_artifacts.py
 verify_step9_revision.py
 data/processed/step9_rf4_balanced_history/
 verify_dashboard.py
+
+# Public-safe Streamlit runtime artifacts. Keep all other processed data ignored.
+!data/processed/
+data/processed/*
+!data/processed/consumption_final_test_predictions.csv
+!data/processed/revenue_final_test_predictions.csv
+!data/processed/anomaly_final_test_predictions.csv
+!reports/summaries/next_month_consumption_predictions.csv
+!reports/summaries/next_month_revenue_risk_predictions.csv
+!reports/summaries/next_month_anomaly_predictions.csv
