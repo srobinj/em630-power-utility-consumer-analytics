@@ -1,10 +1,21 @@
 .venv/
 __pycache__/
 *.pyc
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.joblib
+*.pkl
 data/processed/
 _ground_truth_injected_anomalies.csv
 _generation_config.json
+*ground_truth*
+*generation_config*
 reports/internal_validation/
+reports/private/
+private/
+data/private/
 # Original source stays private; only monthly copies are published.
 Dataset/
 data/new/*
@@ -22,3 +33,4 @@ verify_step8_artifacts.py
 verify_step9_artifacts.py
 verify_step9_revision.py
 data/processed/step9_rf4_balanced_history/
+verify_dashboard.py
